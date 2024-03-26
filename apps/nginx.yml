@@ -9,6 +9,6 @@ spec:
     server: 'https://kubernetes.default.svc'
   source:
     path: .
-    repoURL: 'https://github.com/maurex-dev/argotest.git'
+    repoURL: 'https://github.com/maurex-dev/helm-nginx.git'
     targetRevision: HEAD
   project: default
