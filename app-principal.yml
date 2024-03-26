@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: argocd-apps
+  namespace: argocd
+spec:
+  source:
+    path: apps
+    repoURL: https://github.com/maurex-dev/argotest.git
+    targetRevision: HEAD
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: argocd
+  project: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true  
