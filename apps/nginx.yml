@@ -10,7 +10,7 @@ spec:
   source:
     path: ''
     repoURL: 'https://maurex-dev.github.io/helm-nginx'
-    targetRevision: ''
+    targetRevision: 0.1.0
     chart: helm-nginx
   sources: []
   project: default
